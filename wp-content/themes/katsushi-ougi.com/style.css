@@ -1,4 +1,64 @@
-/*
-Theme Name: katsushi-ougi.com
-Author: Katsushi OUGI
+/* 
+*  Theme Name: katsushi-ougi.com
+*  Author: Katsushi OUGI
 */
+
+
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Layout
+*  2.0 - Global Header
+*/
+
+/*** 1.0 - Layout ***/
+
+#wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#main_contents {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--padding);
+  margin: calc(var(--padding) * 2) auto 0 auto;
+}
+
+#main_contents > main {
+  flex: 1;
+  padding-right: var(--padding);
+  border-right: 1px solid var(--grey3);
+}
+
+#main_contents > aside {
+  width: var(--sidebar-width);
+  padding-left: var(--padding);
+}
+
+#global_footer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--padding) * 2) var(--padding) var(--padding) var(--padding);
+  text-transform: uppercase;
+}
+
+/*** 2.0 - Global Header ***/
+
+.p-globalHeader {
+  background: var(--grey1);
+}
+
+.p-globalHeader__contents {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  height: var(--header-height);
+  padding: 0 var(padding);
+  margin: 0 auto;
+}
