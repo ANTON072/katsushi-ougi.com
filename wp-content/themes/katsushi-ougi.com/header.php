@@ -15,7 +15,7 @@
 
 		<div id="wrapper">
 
-		<header id="global_header" class="p-globalHeader">
+		<header id="global_header" class="p-globalHeader u-font-title-en">
 			<div class="p-globalHeader__contents">
 				<div class="p-globalHeader__head">
 					<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>

@@ -22,14 +22,21 @@ add_action(
       'variables',
       get_template_directory_uri() . '/styles/variables.css',
       false,
-      'v1.0.0'
+      VERSION
     );
 
     wp_enqueue_style(
       'base',
       get_template_directory_uri() . '/styles/base.css',
       false,
-      'v1.0.0'
+      VERSION
+    );
+
+    wp_enqueue_style(
+      'utils',
+      get_template_directory_uri() . '/styles/utils.css',
+      false,
+      VERSION
     );
 
     wp_enqueue_style(
@@ -40,8 +47,9 @@ add_action(
         'normalize',
         'variables',
         'base',
+        'utils',
       ),
-      'v1.0.0'
+      VERSION
     );
 
     wp_deregister_script( 'jquery' );
@@ -60,7 +68,7 @@ add_action(
       array(
         'jquery'
       ),
-      'v1.0.0',
+      VERSION,
       true
     );
 

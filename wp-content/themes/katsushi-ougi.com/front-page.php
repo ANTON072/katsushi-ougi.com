@@ -22,7 +22,7 @@
           <?php the_excerpt(); ?>
         </div>
 
-        <div class="p-article__readMore">
+        <div class="p-article__readMore u-text-link">
           <a href="<?php the_permalink(); ?>">read more &raquo;</a>
         </div>
       </article>
@@ -33,6 +33,7 @@
   ?>
 
 </main>
+
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
