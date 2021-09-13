@@ -250,18 +250,26 @@
 
 /*** 4.0 - Article ***/
 
+.p-article {
+  margin-bottom: var(--padding);
+}
+
 @media (min-width: 992px) {
   .p-article {
     margin-bottom: calc(var(--padding) * 2);
   }
 }
 
-
 .p-article__readMore {
-  margin-top: var(--padding);
-  line-height: 1;
   text-align: right;
   text-transform: uppercase;
+  margin-top: calc(var(--padding) * -1 * 0.5);
+}
+
+@media (min-width: 992px) {
+  .p-article__readMore {
+    margin-top: 0;
+  }
 }
 
 .p-articleNav {
@@ -270,7 +278,7 @@
   padding-top: var(--padding);
   font-feature-settings: 'palt';
   border-top: 1px solid var(--grey3);
-  margin: var(--padding) 0;
+  margin-bottom: var(--padding);
 }
 
 @media (min-width: 992px) {
@@ -291,9 +299,17 @@
 }
 
 .p-articleHead {
-  padding-bottom: var(--padding);
-  margin-bottom: var(--padding);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   border-bottom: 1px solid var(--grey3);
+}
+
+@media (min-width: 992px) {
+  .p-articleHead {
+    padding-bottom: var(--padding);
+    margin-bottom: var(--padding);
+    border-bottom: 1px solid var(--grey3);
+  }
 }
 
 .p-articleHead > h2 {
@@ -314,15 +330,11 @@
   padding-bottom: calc(var(--padding) / 2);
 }
 
-.p-articleHead.-page > h2 {
-  font-size: 2.5rem;
-}
 
 .p-articleHead__meta {
   display: flex;
   flex-direction: column;
   margin-top: calc(var(--padding) / 2);
-  line-height: 1;
 }
 
 @media (min-width: 768px) {
@@ -345,6 +357,8 @@
 
 .p-articleBody {
   font-feature-settings: 'palt';
+  padding-bottom: var(--padding);
+  line-height: 1.7;
 }
 
 .p-articleBody h1,
@@ -436,4 +450,40 @@
   white-space: pre-wrap;
   background: var(--grey3);
   border-radius: 0.25rem;
+}
+
+.p-articleBody ul li {
+  line-height: 1.7;
+  list-style-type: disc;
+}
+
+.p-articleBody ol li {
+  line-height: 1.7;
+  list-style-type: decimal;
+}
+
+ul.p-articleList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+ul.p-articleList li {
+  list-style: none;
+  margin: 15px;
+}
+
+ul.p-articleList li a {
+  padding: 10px;
+  background: var(--grey3);
+  border-radius: 3px;
+  transition: background .3s linear;
+}
+
+ul.p-articleList li a:hover {
+  background: var(--grey1);
+}
+
+.wp-caption {
+  max-width: 100%;
 }

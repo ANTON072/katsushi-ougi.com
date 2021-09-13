@@ -23,7 +23,7 @@
 				</div>
 				<ul class="p-globalHeader__nav">
 					<li><a href="<?php echo esc_url( home_url() ); ?>">home</a></li>
-					<li><a href="<?php echo esc_url( get_year_link( '' ) ); ?>">articles</a></li>
+					<li><a href="/articles">articles</a></li>
 					<li><a href="/about">about</a></li>
 				</ul>
 			</div>

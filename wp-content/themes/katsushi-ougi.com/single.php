@@ -23,8 +23,8 @@
         </div>
 
         <nav class="p-articleNav u-text-link">
-          <div><?php previous_post_link(); ?></div>
-          <div><?php next_post_link(); ?></div>
+          <div><?php previous_post_link( '%link', '&laquo; PREV' ); ?></div>
+          <div><?php next_post_link( '%link', 'NEXT &raquo;' ); ?></div>
         </nav>
 
       </article>
