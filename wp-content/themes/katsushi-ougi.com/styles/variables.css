@@ -11,9 +11,4 @@
   --padding: 38px;
   --header-height: 222px;
   --sidebar-width: 375px;
-
-  /* Breakpoints */
-  --sm: 320px;
-  --md: 750px;
-  --lg: 1920px;
 }
