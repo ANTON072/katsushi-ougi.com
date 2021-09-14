@@ -52,7 +52,7 @@ add_action(
       VERSION
     );
 
-    wp_deregister_script( 'jquery' );
+    wp_deregister_script('jquery');
 
     wp_enqueue_script(
       'jquery',
@@ -71,8 +71,33 @@ add_action(
       VERSION,
       true
     );
-
   }
 );
 
-add_theme_support( 'title-tag' );
+add_theme_support('title-tag');
+
+// セレクトボックスページナビ
+function select_pagination($max_pages, $paged)
+{
+
+  if ($max_pages == 1) return;
+
+  echo '<div class="p-pagination">';
+
+  if ($paged != 1) {
+    echo '<div class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">PREV</a></div>';
+  }
+
+  echo '<select name="page-select">';
+  for ($i = 1; $i <= $max_pages; ++$i) {
+    $selected = ($i == $paged) ? ' selected' : null;
+    echo '<option value="' . esc_url(get_pagenum_link($i)) . '"' . $selected . '>' . $i . '</option>';
+  }
+  echo '</select>';
+
+  if ($paged != $max_pages) {
+    echo '<div class="next"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">NEXT</a></div>';
+  }
+
+  echo '</div>';
+}

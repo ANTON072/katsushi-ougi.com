@@ -19,7 +19,7 @@
 
         <div class="p-articleBody">
           <ul class="p-articleList">
-            <?php wp_get_archives(array( 'type' => 'monthly' )); ?>
+            <?php wp_get_archives(array( 'type' => 'monthly', 'show_post_count' => 1 )); ?>
           </ul>
         </div>
       </article>

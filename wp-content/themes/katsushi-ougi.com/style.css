@@ -11,6 +11,7 @@
 *  2.0 - Global Header
 *  3.0 - Sidebar
 *  4.0 - Article
+*  5.0 - WordPress
 */
 
 /*
@@ -484,6 +485,29 @@ ul.p-articleList li a:hover {
   background: var(--grey1);
 }
 
+.p-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: calc(var(--padding) * 2) 0
+}
+
+.p-pagination a {
+  color: var(--red);
+}
+
+.p-pagination a:hover {
+  text-decoration: underline;
+}
+
+.p-pagination select {
+  margin: 0 1rem;
+  width: 5rem;
+}
+
+/*** 5.0 - Wordpress ***/
+
 .wp-caption {
   max-width: 100%;
 }
+
