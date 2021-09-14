@@ -1,13 +1,10 @@
 <aside class="p-sidebar u-text-link">
 	<div class="p-sidebar__block">
-		<p>OPPOの普通に十分なスペックのReno3Aが実質1980円で手に入るという恐ろしい安さ
-しかも3ヶ月はいくら使っても無料でそれ以降も1GB以下の月は無料である
-ほぼ家でしか使わないから3ヶ月過ぎても毎月無料なの確実という
-それなのに専用アプリを使って通話すれば固定電話にも携帯電話にも通話料無料
-なんかもうごめんなさい、本当にいいんすか？って感じだった</p>
+		<p>日々の業務を通して学んだ記録を書いています。おもにJavaScriptやTypeScriptなどフロントエンド系が中心の内容です。</p>
+		<p><a href="https://twitter.com/anton072?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @anton072</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 	</div>
 
-	<div class="p-sidebar__block">
+	<!-- <div class="p-sidebar__block">
 		<h2 class="u-font-title-en">POPULAR ARTICLES</h2>
 		<ul>
 			<li><a href="#">2020年に最適なfont-familyの書き方</a></li>
@@ -16,7 +13,7 @@
 			<li><a href="#">変幻自在なグラフィック表現！CSS, SVG, Canvasでマスクを使いこなせ</a></li>
 			<li><a href="#">ユーザー設定にレスポンシブ対応できる新しいCSS</a></li>
 		</ul>
-	</div>
+	</div> -->
 
 	<div class="p-sidebar__block">
 		<h2 class="u-font-title-en">TOPICS</h2>
