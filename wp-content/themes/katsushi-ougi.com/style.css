@@ -470,6 +470,14 @@
   list-style-type: decimal;
 }
 
+pre.wp-block-code,
+.p-articleBody blockquote {
+  margin-left: calc(var(--padding) * -1) !important;
+  margin-right: calc(var(--padding) * -1) !important;
+  padding-left: var(--padding) !important;
+  padding-right: var(--padding) !important;
+}
+
 ul.p-articleList {
   display: flex;
   flex-wrap: wrap;
@@ -519,11 +527,8 @@ ul.p-articleList li a:hover {
 }
 
 pre.wp-block-code {
-  margin-left: calc(var(--padding) * -1) !important;
-  margin-right: calc(var(--padding) * -1) !important;
-  padding-left: var(--padding) !important;
-  padding-right: var(--padding) !important;
   background: rgb(40, 44, 52) !important;
   font-size: 14px;
   line-height: 20px;
+  border-radius: 0;
 }
