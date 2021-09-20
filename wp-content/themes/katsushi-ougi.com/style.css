@@ -524,6 +524,7 @@ ul.p-articleList li a:hover {
 
 .wp-caption {
   max-width: 100%;
+  height: auto;
 }
 
 pre.wp-block-code {
