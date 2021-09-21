@@ -1,0 +1,11 @@
+.u-font-title-en {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.u-text-link a {
+  color: var(--red);
+}
+
+.u-text-link a:hover {
+  text-decoration: underline;
+}
