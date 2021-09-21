@@ -533,3 +533,8 @@ pre.wp-block-code {
   line-height: 20px;
   border-radius: 0;
 }
+
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
