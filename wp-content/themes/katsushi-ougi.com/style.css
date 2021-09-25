@@ -439,6 +439,13 @@
   border-bottom: 3px solid color(grey3);
 }
 
+pre.wp-block-code,
+.p-articleBody blockquote,
+.p-articleBody .gist,
+.wp-block-table {
+  margin-left: calc(var(--padding) * -1) !important;
+  margin-right: calc(var(--padding) * -1) !important;
+}
 
 .p-articleBody p {
   font-size: font-size(18);
@@ -470,10 +477,23 @@
   list-style-type: decimal;
 }
 
+.p-articleBody table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.p-articleBody table th,
+.p-articleBody table td {
+  padding: 0.5rem var(--padding);
+}
+
+.p-articleBody table tr:nth-child(odd) {
+  background-color: var(--grey3);
+}
+
 pre.wp-block-code,
 .p-articleBody blockquote {
-  margin-left: calc(var(--padding) * -1) !important;
-  margin-right: calc(var(--padding) * -1) !important;
   padding-left: var(--padding) !important;
   padding-right: var(--padding) !important;
 }
