@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+<?php ?>
 <main>
   <?php
   if (have_posts()) :

@@ -7,6 +7,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<?php wp_head(); ?>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-FRCBSLCY4G"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-FRCBSLCY4G');
+		</script>
 		<title><?php bloginfo( 'name' ); ?></title>
 	</head>
 	<body <?php body_class(); ?>>
