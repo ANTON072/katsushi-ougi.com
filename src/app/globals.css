@@ -1,24 +1,57 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-en: 'Calibre', sans-serif;
+
+  /* テキストカラー */
+  --color-text-primary: #3a4554;
+  --color-text-secondary: #6b7b8a;
+
+  /* プライマリーカラー（赤系） */
+  --color-primary-dark: #e55c5c;
+  --color-primary: #ff6b6b;
+  --color-primary-light: #ffb3b3;
+
+  /* セカンダリーカラー（緑系） */
+  --color-secondary: #96b2a2;
+  --color-secondary-dark: #607d6b;
+  --color-secondary-light: #bcd6c8;
+
+  /* その他の色 */
+  --color-background: #faf9f8;
+  --color-border: #e5e7eb;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Calibre-Regular.woff2') format('woff2');
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/Calibre-Semibold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Calibre-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@layer components {
+  .link-container a {
+    @apply text-text-primary hover:text-primary transition-colors duration-200;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .link-container-secondary a {
+    @apply text-primary hover:text-primary/50 transition-colors duration-200;
+  }
 }
