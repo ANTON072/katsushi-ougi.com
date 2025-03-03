@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 import TagChip from '@/components/tag-chip';
-
 import { timeFormat } from '@/utils';
 
 export default function PostHeader() {
