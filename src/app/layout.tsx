@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${notoSans.className} bg-background text-text-primary grid min-h-screen grid-rows-[auto_1fr_auto] antialiased`}
       >
         <GlobalHeader />
-        {children}
+        <div className="mx-auto w-full max-w-5xl p-6">{children}</div>
         <GlobalFooter />
       </body>
     </html>
